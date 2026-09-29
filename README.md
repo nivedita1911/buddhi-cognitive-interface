@@ -34,6 +34,6 @@ When multi-modal token-stream divergence breaches the default homeostatic safety
 
 ## 🔒 Proprietary Notice & Legal Status
 *   **Patent Application No:** Indian Patent Office Ref: `202641098749`
-*   **Filing Status:** Complete Specification (CAP) Filed officially on 12 September 2026. Priority Date locked on 14 August 2026.
+*   **Filing Status:** Complete Specification (CAP) Filed officially on 12 September 2026 and published on 19 September 2026. Priority Date locked on 14 August 2026.
 *   *Core weights, parameter manifolds, and the proprietary base substrate execution blocks remain hidden and restricted under the commercial guidelines of M/s Nividita AI LLP.*
 # buddhi-cognitive-interface
