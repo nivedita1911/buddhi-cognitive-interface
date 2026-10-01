@@ -1,0 +1,31 @@
+{
+  "manifest_metadata": {
+    "document_id": "CPS-HWM-2026-B1",
+    "corporate_entity": "M/S Nivedita AI LLP",
+    "architecture_target": "Buddhi Multi-Modal Cognitive Interface",
+    "patent_application_ref": "IN-202641098749",
+    "dpiit_startup_id": "DIPP280844",
+    "last_telemetry_alignment": "2026-10-01T23:46:00Z"
+  },
+  "compute_boundary_constraints": {
+    "vram_ceiling_bytes": 8589934592,
+    "vram_ceiling_formatted": "8.0 GB",
+    "allocation_strategy": "static_active_inference_enveloping",
+    "tensor_precision_modes": ["INT8", "FP16_Throttled"],
+    "nvml_telemetry_polling_interval_ms": 1000
+  },
+  "thermodynamic_safety_profiles": {
+    "t_max_celsius": 64.0,
+    "p_max_watts": 145.0,
+    "p_brake_watts": 123.0,
+    "gamma_base_threshold": 0.5500,
+    "logit_attenuation_step": 0.2000,
+    "steady_state_target_celsius": 41.0
+  },
+  "embodied_actuation_mappings": {
+    "perceptual_substrate": "Eye_Substrate_Spatial_Temporal_CV",
+    "execution_substrate": "Robotic_Joint_Manipulation_Matrix",
+    "degrees_of_freedom_locked": 6,
+    "max_software_stack_latency_ms": 4.2
+  }
+}
