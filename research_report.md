@@ -58,3 +58,29 @@ The gathered telemetry vectors demonstrate that the **Buddhi Multi-Modal Cogniti
 ---
 **Approved for Project Directory Integration:**  
 *Chief Deep-Tech AI & Robotics Architect Core Substrate* 🖥️🔒
+---
+
+## APPENDIX B: CORE FORMULATIONS & TELEMETRY GOVERNANCE
+
+The homeostatic inference framework operates by tracking runtime Semantic Drift (\(D_s\)) and calculating an instantaneous **Kinetic Activation Vector (κ)**. This value directly regulates the hardware power draw before physical thermal throttling triggers at the silicon boundary.
+
+### 1. Kinetic Brake Velocity Equation
+The system calculates real-time token deceleration using the following tensor logic:
+
+\[\kappa = \min \left( 1.0, \frac{D_s}{\Gamma_{base}} \right) \times \left( \frac{T_{core}}{T_{max}} \right)^2\]
+
+*Where:*
+*   \(D_s\): Current Semantic Drift index value (sampled execution metric).
+*   \(\Gamma_{base}\): System Kinetic Brake Threshold (hardcoded at `0.5500`).
+*   \(T_{core}\): Real-time physical silicon temperature read via NVML bindings.
+*   \(T_{max}\): Core Thermal Safety Ceiling limit (hardcoded at `64.0°C`).
+
+### 2. Attenuation Logit Vector Realization
+When κ ≥ 1.0, the **Buddhi-Core System Optimization Engine** intercepts the transformer model's output distribution layer. It enforces a strict logit temperature attenuation parameter (Δ τ) to flatten token generation loops and shed compute load:
+
+\[\tau_{runtime} = \tau_{baseline} - (\Delta \tau \times \kappa)\]
+
+\[\text{If } P_{core} > P_{brake} \implies \Delta \tau = 0.2000\]
+
+By applying this deterministic logit drop, the architecture reduces structural token entropy, prompting an instantaneous power drop from the maximum unconstrained draw down to the stable state (`123.0 W`), protecting local edge hardware nodes without dropping active vocabulary matrices.
+
