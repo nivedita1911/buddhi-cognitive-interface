@@ -37,3 +37,39 @@ When multi-modal token-stream divergence breaches the default homeostatic safety
 *   **Filing Status:** Complete Specification (CAP) Filed officially on 12 September 2026 and published on 19 September 2026. Priority Date locked on 14 August 2026.
 *   *Core weights, parameter manifolds, and the proprietary base substrate execution blocks remain hidden and restricted under the commercial guidelines of M/s Nividita AI LLP.*
 # buddhi-cognitive-interface
+---
+
+## 🚀 Getting Started & Simulation Execution
+
+To validate the homeostatic control loops and verify the `8GB VRAM Bound Ceiling` parameters on local edge nodes, initialize the reference architecture simulation environment via terminal:
+
+### 1. Clone & Initialize the Substrate Environment
+```bash
+# Clone the core verification files
+git clone https://github.com
+cd buddhi-cognitive-interface
+
+# Create and activate an isolated python environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+
+### 2. Install Validation Dependencies
+```bash
+# Upgrade platform pip tools and pull required numeric/testing frameworks
+pip install --upgrade pip
+pip install numpy pytest
+```
+
+### 3. Run the Silicon Telemetry Validation Loop
+Execute the core thermodynamic enforcement simulation script to witness the active logit temperature drops and power envelope management in real time:
+```bash
+python silicon_thermodynamics.py
+```
+
+### 4. Execute Automated Unit Verification Tests
+To run the automated boundary constraints validation suite locally:
+```bash
+pytest telemetry/test_constraints.py -v
+```
+
